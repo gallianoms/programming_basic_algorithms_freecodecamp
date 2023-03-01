@@ -1,0 +1,9 @@
+function confirmEnding(str, target) {
+
+  const strLen = str.length
+  const targetlen = target.length
+  return str.slice(strLen - targetlen) === target
+   
+}
+
+confirmEnding("Bastian", "n") //true

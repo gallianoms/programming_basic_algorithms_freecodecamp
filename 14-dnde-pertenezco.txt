@@ -1,0 +1,8 @@
+function getIndexToIns(arr, num) {
+    if (arr.length === 0) return 0
+  if (arr.sort((a,b) => a - b)[arr.length - 1] < num) return arr.length
+  
+  return arr.sort((a,b) => a - b).findIndex(n => n >= num)
+}
+
+getIndexToIns([40, 60], 50);
